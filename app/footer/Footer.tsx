@@ -10,11 +10,25 @@ const Footer = () => {
       animate="animate"
     >
       <motion.div className="mx-auto flex w-[90%] flex-col items-center justify-center text-center text-[12px] text-[#f9e8d9] sm:text-[12px] md:flex-row md:justify-between md:text-[14px] lg:max-w-[1440px] lg:text-[14px]">
+        <div className="flex flex-row items-center gap-1">
+          <AnimatedBody
+            text={"Design & Development by"}
+            className={"m-0 p-0"}
+          />
+          <Link
+            href="https://www.instagram.com/yourfzz_"
+            target="_blank"
+            aria-label="yourfzz's Instagram Profile"
+          >
+            <span className="underline underline-offset-2 hover:no-underline">
+              <AnimatedBody text={"yourfzz"} className={"m-0 p-0"} />
+            </span>{" "}
+          </Link>
+        </div>
         <AnimatedBody
-          text={"Design & Development by YO! Visual"}
+          text={`Copyright ©${new Date().getFullYear()}`}
           className={"m-0 p-0"}
         />
-        <AnimatedBody text={"Copyright ©2024"} className={"m-0 p-0"} />
         {/* <div className="flex flex-col sm:flex-row  sm:gap-1 md:gap-2">
           <AnimatedBody
             text={"Design & Development by"}
